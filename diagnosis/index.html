@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!-- common style -->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- script -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<ul class="diagnosis js-diagnosis">
+
+		<!-- question -->
+		<li class="current" data-number="1">
+			<p>1</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="2">A</a>
+				<a href="#" class="btn" data-jump="3">B</a>
+			</div>
+		</li>
+		<li data-number="2">
+			<p>2</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="4">A</a>
+				<a href="#" class="btn" data-jump="5">B</a>
+			</div>
+		</li>
+		<li data-number="3">
+			<p>3</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="6">A</a>
+				<a href="#" class="btn" data-jump="5">B</a>
+			</div>
+		</li>
+		<li data-number="4">
+			<p>4</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="7">A</a>
+				<a href="#" class="btn" data-jump="8">B</a>
+			</div>
+		</li>
+		<li data-number="5">
+			<p>5</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="8">A</a>
+				<a href="#" class="btn" data-jump="9">B</a>
+			</div>
+		</li>
+		<li data-number="6">
+			<p>6</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="9">A</a>
+				<a href="#" class="btn" data-jump="10">B</a>
+			</div>
+		</li>
+		<li data-number="7">
+			<p>7</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="11">A</a>
+				<a href="#" class="btn" data-jump="8">B</a>
+			</div>
+		</li>
+		<li data-number="8">
+			<p>8</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="11">A</a>
+				<a href="#" class="btn" data-jump="12">B</a>
+			</div>
+		</li>
+		<li data-number="9">
+			<p>9</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="12">A</a>
+				<a href="#" class="btn" data-jump="13">B</a>
+			</div>
+		</li>
+		<li data-number="10">
+			<p>10</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="9">A</a>
+				<a href="#" class="btn" data-jump="13">B</a>
+			</div>
+		</li>
+		<li data-number="11">
+			<p>11</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="14">A</a>
+				<a href="#" class="btn" data-jump="15">B</a>
+			</div>
+		</li>
+		<li data-number="12">
+			<p>12</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="16">A</a>
+				<a href="#" class="btn" data-jump="15">B</a>
+			</div>
+		</li>
+		<li data-number="13">
+			<p>13</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="12">A</a>
+				<a href="#" class="btn" data-jump="16">B</a>
+			</div>
+		</li>
+		<li data-number="14">
+			<p>14</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="18">A</a>
+				<a href="#" class="btn" data-jump="17">B</a>
+			</div>
+		</li>
+		<li data-number="15">
+			<p>15</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="18">A</a>
+				<a href="#" class="btn" data-jump="19">B</a>
+			</div>
+		</li>
+		<li data-number="16">
+			<p>16</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="19">A</a>
+				<a href="#" class="btn" data-jump="20">B</a>
+			</div>
+		</li>
+
+		<!-- jump result -->
+		<li data-number="17">
+			<p>17</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="21">A</a>
+				<a href="#" class="btn" data-jump="22">B</a>
+			</div>
+		</li>
+		<li data-number="18">
+			<p>18</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="23">A</a>
+				<a href="#" class="btn" data-jump="24">B</a>
+			</div>
+		</li>
+		<li data-number="19">
+			<p>19</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="25">A</a>
+				<a href="#" class="btn" data-jump="26">B</a>
+			</div>
+		</li>
+		<li data-number="20">
+			<p>20</p>
+			<div class="btn-box js-btn-box cf">
+				<a href="#" class="btn" data-jump="27">A</a>
+				<a href="#" class="btn" data-jump="28">B</a>
+			</div>
+		</li>
+
+		<!-- confirm -->
+		<li class="confirm-diagnosis">
+			<p>これで設問は終了です</p>
+			<a href="#">診断結果を見る</a>
+		</li>
+
+		<!-- result -->
+		<li class="js-result" data-number="21">
+			<p>aタイプ</p>
+			<a href="#" class="return-btn js-return-btn">もう一度診断する</a>
+		</li>
+		<li class="js-result" data-number="22">
+			<p>bタイプ</p>
+			<a href="#" class="return-btn js-return-btn">もう一度診断する</a>
+		</li>
+		<li class="js-result" data-number="23">
+			<p>cタイプ</p>
+			<a href="#" class="return-btn js-return-btn">もう一度診断する</a>
+		</li>
+		<li class="js-result" data-number="24">
+			<p>dタイプ</p>
+			<a href="#" class="return-btn js-return-btn">もう一度診断する</a>
+		</li>
+		<li class="js-result" data-number="25">
+			<p>eタイプ</p>
+			<a href="#" class="return-btn js-return-btn">もう一度診断する</a>
+		</li>
+		<li class="js-result" data-number="26">
+			<p>fタイプ</p>
+			<a href="#" class="return-btn js-return-btn">もう一度診断する</a>
+		</li>
+		<li class="js-result" data-number="27">
+			<p>gタイプ</p>
+			<a href="#" class="return-btn js-return-btn">もう一度診断する</a>
+		</li>
+		<li class="js-result" data-number="28">
+			<p>hタイプ</p>
+			<a href="#" class="return-btn js-return-btn">もう一度診断する</a>
+		</li>
+	</ul>
+
+	<div class="status-bar">
+		<div class="current-status js-current-status"></div>
+	</div>
+
+	<a href="#" class="prev-btn js-prev-btn">1つ戻る</a>
+
+
+	<!-- <ul class="result js-result cf">
+		<li class="current" data-result="a">a</li>
+		<li data-number="b">b</li>
+		<li data-number="c">c</li>
+		<li data-number="d">d</li>
+		<li data-number="e">e</li>
+		<li data-number="f">f</li>
+		<li data-number="g">g</li>
+		<li data-number="h">h</li>
+	</ul> -->
+
+<script src="js/diagnosis.js"></script>
+</body>
+</html>

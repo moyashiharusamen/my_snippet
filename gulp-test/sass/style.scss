@@ -1,0 +1,24 @@
+
+h1 {
+	color: black;
+	width: 100px;
+	height: 100px;
+	transition: 200ms ease-out transform;
+	&:hover {
+		color: #FFFFFF;
+		transform: translate(10px,0);
+	}
+}
+
+p {
+	color: red;
+}
+
+@media screen and ( max-width: 736px) {
+	h1 {
+		color: red;
+		&:hover {
+			color: blue;
+		}
+	}
+}
