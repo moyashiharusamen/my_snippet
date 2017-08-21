@@ -2,7 +2,9 @@ var screenCanvas, info;
 var run = true;
 var fps =  1000 / 30;
 var mouse =  new Point();
+
 var ctx;
+var CHARA_COLOR = "rgba(0, 0, 255, 0.75)";
 
 
 window.onload = function(){
@@ -17,12 +19,15 @@ window.onload = function(){
 
   info = document.getElementById('info');
 
+  var chara = new Character();
+  chara.init(10);
+
   (function(){
     info.innerHTML = mouse.x + ' : ' + mouse.y;
 
     ctx.clearRect(0, 0, screenCanvas.width, screenCanvas.height);
     ctx.beginPath();
-    ctx.fillStyle = 'rgba(0, 0, 100, 0.75)';
+    ctx.fillStyle = CHARA_COLOR;
     ctx.arc(mouse.x, mouse.y, 10, 0, Math.PI * 2, false);
     ctx.fill();
 
