@@ -1,0 +1,104 @@
+@charset 'utf-8';
+
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* carousel */
+.carousel {
+  width: 800px;
+  width: 100vw;
+  width: 100%;
+  max-width: 1200px;
+  height: 450px;
+  margin: 50px auto 0;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-box {
+  width: 3200px;
+  width: 400vw;
+  width: 400%;
+  position: absolute;
+  font-size: 0;
+}
+.carousel-box > li {
+  width: 800px;
+  width: 100vw;
+  width: 25%;
+  font-size: 16px;
+  float: left;
+}
+.carousel-box > li > a {
+  display: block;
+  overflow: hidden;
+}
+.carousel-box > li > a > img,
+.carousel-box > li > a > .carousel-box-desc {
+  float: left;
+}
+.carousel-box > li > a > img {
+  width: 50%;
+}
+.carousel-box > li > a > .carousel-box-desc {
+  width: 50%;
+}
+/*.carousel-box > li > img {
+  width: 100%;
+}*/
+
+/* button */
+.prev-btn, .next-btn {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255,255,255,.8);
+  border-radius: 15px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.prev-btn:hover,
+.next-btn:hover {
+  opacity: 0.7;
+}
+.prev-btn {
+  position: absolute;
+  left: 10px;
+}
+.next-btn {
+  position: absolute;
+  right: 10px;
+}
+.prev-btn:before,
+.prev-btn:after,
+.next-btn:before,
+.next-btn:after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+}
+.prev-btn:before {
+  top: 10px;
+  left: 6px;
+  transform: rotate(-40deg);
+}
+.prev-btn:after {
+  bottom: 10px;
+  left: 6px;
+  transform: rotate(40deg);
+}
+.next-btn:before {
+  top: 10px;
+  right: 6px;
+  transform: rotate(40deg);
+}
+.next-btn:after {
+  bottom: 10px;
+  right: 6px;
+  transform: rotate(-40deg);
+}

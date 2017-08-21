@@ -1,0 +1,41 @@
+<html>
+<head>
+<script src="../jquery-1.12.4.min.js"></script>
+<style>
+#target {
+  /*height: 100px;
+  background: #e0e0e0;*/
+}
+</style>
+</head>
+<body>
+    <input type="button" id="result" value="クリック数">
+    <div id="target"></div>
+
+    <script>
+    var clickCounter = function(count, $target){
+        this.count = count;
+        this.$target = $target;
+        var myself = this;
+
+        this.init = function(){
+            var myself= this;
+
+            this.$target.on('click', function(){
+                myself.count++;
+            });
+        },
+        this.display = function(){
+            console.log(myself.count++);
+        }
+    };
+
+    var obj = new clickCounter(0, $('#target'));
+
+
+    $('#result').on('click', function(){
+        var click = new obj.display();
+    });
+    </script>
+</body>
+</html>

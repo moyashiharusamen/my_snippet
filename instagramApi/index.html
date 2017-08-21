@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>instagram api</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+<!-- style -->
+<link rel="stylesheet" href="../reset.css">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<!-- script -->
+<script src="../jquery-1.12.4.min.js"></script>
+
+<style>
+#instafeed {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#instafeed > li {
+  float: left;
+  width: 50%;
+  border: 1px solid #333;
+}
+#instafeed > li > a {
+  display: block;
+}
+#instafeed > li > a > img{
+  width: 100%;
+  filter: blur(60px);
+}
+</style>
+
+</head>
+<body>
+
+<ul id="instafeed">
+
+</ul>
+
+<script src="js/instafeed.js"></script>
+<script type="text/javascript">
+var userFeed = new Instafeed({
+get: 'user',
+userId: 1697733381,
+accessToken: '1697733381.5d600d4.f38bc0ff182d4055b591acc7bfeca9b4',
+limit: 10,
+sortBy: "most-recent",
+
+template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" alt="{{caption}}" /></a></li>'
+});
+userFeed.run();
+
+</script>
+</body>
+</html>

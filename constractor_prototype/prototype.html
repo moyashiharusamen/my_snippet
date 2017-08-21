@@ -1,0 +1,40 @@
+<html>
+<head>
+<script src="../jquery-1.12.4.min.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+  <input type="button" id="display" value="クリック数">
+  <div id="target"></div>
+
+
+  <script>
+  var ClickCounter = function(targetId, displayId){
+    this.count = 0;
+    this.$target = $('#target');
+    this.$display = $('#display');
+
+    this.init = function(){
+      var myself= this;
+
+      this.$target.on('click',  function(){
+        myself.count++;
+      });
+      this.$display.on('click', function(){
+        console.log(myself.count++);
+      });
+    };
+    this.init();
+  }
+
+  ClickCounter.protorype = function(){
+
+  }
+
+  var obj = new ClickCounter();
+
+  </script>
+</body>
+</html>
