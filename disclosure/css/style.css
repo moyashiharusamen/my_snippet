@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+}
+
+#main {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.disclosure-content {
+    display: none;
+}
+
+.disclosure-btnTxt {
+    display: block;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.disclosure-btn {
+    border-bottom: 1px solid #ccc;
+    background: #f6f6f6;
+    font-size: 1.6rem;
+}
+.disclosure-btn:first-of-type {
+    border-top: 1px solid #ccc;
+}
+.disclosure-btn > button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: left;
+    background: #eee;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.disclosure-btnIcon {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.disclosure-btnIcon::before,
+.disclosure-btnIcon::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 14px;
+    height: 2px;
+    background: #005183;
+    content: '';
+    transform: translate(-50%);
+}
+.disclosure-btnIcon::before {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+    transform: translate(-50%) rotate(90deg);
+}
+.disclosure-btn > button[aria-expanded='true'] .disclosure-btnIcon::before {
+    transform: translate(-50%) rotate(0);
+}
+.disclosure-content {
+    padding: 25px 15px;
+    border: 1px solid #ccc;
+    border-top: 0;
+    font-size: 1.6rem;
+}
+.disclosure-content:first-of-type {
+    border-bottom: 0;
+}
+.disclosure.disclosure-onlySp .disclosure-content {
+    display: none;
+}
+.disclosure.disclosure-onlySp button[type='button'] {
+    cursor: pointer;
+}
