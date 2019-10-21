@@ -3,7 +3,6 @@
 html {
     font-size: 62.5%;
 }
-
 button {
     -webkit-appearance: none;
     appearance: none;
@@ -12,17 +11,14 @@ button {
     outline: none;
     padding: 0;
 }
-
 #main {
     width: 100%;
     max-width: 980px;
     margin: 0 auto;
 }
-
 .disclosure-content {
     display: none;
 }
-
 .disclosure-btnTxt {
     display: block;
     overflow: hidden;
@@ -30,7 +26,6 @@ button {
     height: 0;
     opacity: 0;
 }
-
 .disclosure-btn {
     border-bottom: 1px solid #ccc;
     background: #f6f6f6;
@@ -92,4 +87,7 @@ button {
 }
 .disclosure.disclosure-onlySp button[type='button'] {
     cursor: pointer;
+}
+.js-invalid .disclosure-content {
+    display: block;
 }
